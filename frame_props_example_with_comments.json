@@ -1,0 +1,29 @@
+{
+  "camera_props": {
+    "projection": "stereographic", // or "orthographic"
+    "step_size": 10.0, // Step size for ray-casting, in pc. Smaller -> higher quality.
+    "max_dist": 3000.0, // Maximum distance (in pc) to integrate out to
+    "fov": 45.0, // Camera horizontal field of view (in deg)
+    "x_pix": 600, // Width of output image (in pixels)
+    "y_pix": 400, // Height of output image (in pixels)
+    "vmax": "auto", // Clip threshold (in mag) for images (either a number or "auto")
+    "clip_mode": "tanh", // Clip mode for pixels over threshold ("clip" or "tanh")
+    "fuzzy": true, // Jitter step size (along rays)? This helps avoid aliasing.
+    "randomize_angles": true, // Jitter pixel centers (in angle)? This helps avoid aliasing.
+    "euler_convention": "szyz" // Euler convention for camera rotation angles
+  },
+  "frame_props": [
+    { // 1st frame
+      "xyz": [0.0, 0.0, 0.0], // (x,y,z) of camera (in pc), in Sun-centered Galactic coordinates
+      "angles": [0.0, 0.0, 0.0] // Euler angles of camera orientation, relative to a standard Galactic projection
+    },
+    { // 2nd frame
+      "xyz": [0.0, 0.0, 100.0],
+      "angles": [0.0, 0.0, 0.0]
+    },
+    { // 3rd frame
+      "xyz": [0.0, 0.0, -100.0],
+      "angles": [0.0, 0.0, 0.0]
+    }
+  ]
+}

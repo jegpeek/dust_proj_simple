@@ -1,0 +1,29 @@
+{
+  "camera_props": {
+    "projection": "stereographic",
+    "step_size": 10.0,
+    "max_dist": 3000.0,
+    "fov": 45.0,
+    "x_pix": 600,
+    "y_pix": 400,
+    "vmax": "auto",
+    "clip_mode": "tanh",
+    "fuzzy": true,
+    "randomize_angles": true,
+    "euler_convention": "szyz"
+  },
+  "frame_props": [
+    {
+      "xyz": [0.0, 0.0, 0.0],
+      "angles": [0.0, 0.0, 0.0]
+    },
+    {
+      "xyz": [0.0, 0.0, 100.0],
+      "angles": [0.0, 0.0, 0.0]
+    },
+    {
+      "xyz": [0.0, 0.0, -100.0],
+      "angles": [0.0, 0.0, 0.0]
+    }
+  ]
+}
